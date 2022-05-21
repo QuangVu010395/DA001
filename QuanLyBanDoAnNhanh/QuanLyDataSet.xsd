@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QuanLyDataSet" targetNamespace="http://tempuri.org/QuanLyDataSet.xsd" xmlns:mstns="http://tempuri.org/QuanLyDataSet.xsd" xmlns="http://tempuri.org/QuanLyDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QuanLyConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QuanLyConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.QuanLyBanDoAnNhanh.Properties.Settings.GlobalReference.Default.QuanLyConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_2TableAdapter" GeneratorDataComponentClassName="View_2TableAdapter" Name="View_2" UserDataComponentName="View_2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QuanLyConnectionString (Settings)" DbObjectName="QuanLy.dbo.View_2" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT totalPrice, idTable, id, DateCheckIn, DateCheckOut FROM dbo.View_2</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="totalPrice" DataSetColumn="totalPrice" />
+              <Mapping SourceColumn="idTable" DataSetColumn="idTable" />
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="DateCheckIn" DataSetColumn="DateCheckIn" />
+              <Mapping SourceColumn="DateCheckOut" DataSetColumn="DateCheckOut" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QuanLyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QuanLyDataSet" msprop:Generator_UserDSName="QuanLyDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_2" msprop:Generator_TableClassName="View_2DataTable" msprop:Generator_TableVarName="tableView_2" msprop:Generator_TablePropName="View_2" msprop:Generator_RowDeletingName="View_2RowDeleting" msprop:Generator_RowChangingName="View_2RowChanging" msprop:Generator_RowEvHandlerName="View_2RowChangeEventHandler" msprop:Generator_RowDeletedName="View_2RowDeleted" msprop:Generator_UserTableName="View_2" msprop:Generator_RowChangedName="View_2RowChanged" msprop:Generator_RowEvArgName="View_2RowChangeEvent" msprop:Generator_RowClassName="View_2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="totalPrice" msprop:Generator_ColumnVarNameInTable="columntotalPrice" msprop:Generator_ColumnPropNameInRow="totalPrice" msprop:Generator_ColumnPropNameInTable="totalPriceColumn" msprop:Generator_UserColumnName="totalPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="idTable" msprop:Generator_ColumnVarNameInTable="columnidTable" msprop:Generator_ColumnPropNameInRow="idTable" msprop:Generator_ColumnPropNameInTable="idTableColumn" msprop:Generator_UserColumnName="idTable" type="xs:int" />
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="DateCheckIn" msprop:Generator_ColumnVarNameInTable="columnDateCheckIn" msprop:Generator_ColumnPropNameInRow="DateCheckIn" msprop:Generator_ColumnPropNameInTable="DateCheckInColumn" msprop:Generator_UserColumnName="DateCheckIn" type="xs:dateTime" />
+              <xs:element name="DateCheckOut" msprop:Generator_ColumnVarNameInTable="columnDateCheckOut" msprop:Generator_ColumnPropNameInRow="DateCheckOut" msprop:Generator_ColumnPropNameInTable="DateCheckOutColumn" msprop:Generator_UserColumnName="DateCheckOut" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_2" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
